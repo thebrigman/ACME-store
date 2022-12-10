@@ -1,0 +1,42 @@
+img {
+    max-width: 40%;
+    height: auto;
+  }
+#road{
+  max-width: 10%;
+  height: auto;
+
+}
+#road2{
+  max-width: 40%;
+  height: auto;
+
+}
+  body{
+    background-color: white;
+  }
+  
+  li{
+    border-style: groove;
+    border-color: #0DCAF0;
+    border-width: 1px;
+    border-bottom: none;
+  }
+
+  /* li:hover {
+    background-color:  	#FFC107;
+    
+  } */
+
+  .nav > li {
+    background-color: white;
+}
+  .nav > li > a:hover{
+    background-color:  	#FFC107;
+  }
+
+.cat{
+  
+  color:white 
+}
+
