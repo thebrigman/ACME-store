@@ -53,7 +53,7 @@
             }
 
             function createAccount($user, $password){
-            
+        
                 $conn = connectToDB();
                 $sql = 'INSERT INTO USERS (USERNAME, PASSWORD) values ("'.$user.'", "'.$password.'");';
                 $results = mysqli_query($conn, $sql);

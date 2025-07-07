@@ -1,19 +1,27 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
     session_start();
    
     include("includes/server.php");
     include("includes/functions.php");
+    include('includes/bootstrap.php');
+
+    
 
     $conn = connectToDB();
+    ensureSchema($conn); 
     $sql = 'SELECT * FROM USERS;';
     $results = mysqli_query($conn, $sql);
 
-    while ($row = mysqli_fetch_array($results, MYSQLI_ASSOC))
-    {
-        $id[] = $row['ID'];
-        $userName[] = $row['USERNAME'];
-        $psswd[] = $row['PASSWORD'];
-    };
+    // while ($row = mysqli_fetch_array($results, MYSQLI_ASSOC))
+    // {
+    //     $id[] = $row['ID'];
+    //     $userName[] = $row['USERNAME'];
+    //     $psswd[] = $row['PASSWORD'];
+    // };
 
     $user = "";
     $pass = "";
@@ -39,7 +47,8 @@
         if(isset($_POST["username"]) && isset($_POST["password"])){
             
             $user = trim(strtolower($_POST["username"]));
-            $pass = hashPass($_POST["password"]);
+            //$pass = hashPass($_POST["password"]);
+            $pass = $_POST["password"];
             
             $sql = "SELECT * FROM USERS WHERE USERNAME = '".$user."' and PASSWORD = '".$pass."' ";
             $conn = connectToDB();

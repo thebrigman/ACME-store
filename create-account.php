@@ -41,7 +41,7 @@
                     
                 
                 }else{      
-                    $password = hashPass ($password);
+                    //$password = hashPass ($password);
                     echo createAccount($user, $password);
                     
                     

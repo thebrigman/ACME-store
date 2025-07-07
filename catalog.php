@@ -25,9 +25,6 @@
         $tableGuts .= '<div class="col"><h5 class="mt-5">$'.$row['PRICE'].'</h5></div>';
         $tableGuts .= '<div class="col"> <a href="product.php?id='.$id.'"><button class="btn btn-warning pt-4 pb-4 mt-4">View Product Details</button></a> </div>';
         $tableGuts .= '</div>';
-        
-        
-        
     }
     
     $tableClose = '</div>';
