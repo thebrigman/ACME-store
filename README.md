@@ -1,10 +1,10 @@
-# 📦 ACME Store
+# ACME Store
 
 A demo e-commerce website for browsing and purchasing ACME products.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the repository**
    ```bash
@@ -27,7 +27,7 @@ A demo e-commerce website for browsing and purchasing ACME products.
 
 ---
 
-## 👤 Login Credentials
+## Login Credentials
 
 - **Username:** `admin`  
 - **Password:** `password`  
@@ -35,7 +35,7 @@ Or click **“Create a new account”** to register your own.
 
 ---
 
-## 🛒 Features
+## Features
 
 - View 20 preloaded ACME products
 - Browse with images, names, and prices
@@ -45,7 +45,7 @@ Or click **“Create a new account”** to register your own.
 
 ---
 
-## 🧑‍💻 Tech Stack
+## Tech Stack
 
 - PHP
 - MySQL
